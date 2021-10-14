@@ -1,0 +1,5 @@
+vendor
+public/extern/jquery/*
+public/extern/bootstrap/*
+.idea
+.env

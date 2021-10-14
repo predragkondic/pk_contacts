@@ -1,0 +1,8 @@
+tr.odd td {
+    background-color: #dbdbdb;
+}
+
+#contacts_wrapper {
+    width: 80%;
+    margin: 0 auto;
+}

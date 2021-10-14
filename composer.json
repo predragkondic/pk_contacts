@@ -1,0 +1,29 @@
+{
+    "name": "variussystems/contacts",
+    "description": "a simple contacts manager",
+    "type": "project",
+    "require": {
+        "twbs/bootstrap": "4.*",
+        "vlucas/phpdotenv": "^5.3",
+        "components/jquery": "3.6.0"
+    },
+    "autoload": {
+        "psr-4": {"Variussystems\\": "src/"}
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "rm -rf public/assets/js/extern/jquerybootstrap/*",
+            "rm -rf public/assets/js/extern/bootstrap/*",
+            "cp -R vendor/twbs/bootstrap/dist/css/* public/assets/extern/bootstrap/",
+            "cp -R vendor/twbs/bootstrap/dist/js/* public/assets/extern/bootstrap/",
+            "cp -R vendor/components/jquery/jquery.min.js public/assets/extern/jquery/"
+        ]
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Predrag Kondic",
+            "email": "predragfm@gmail.com"
+        }
+    ]
+}
